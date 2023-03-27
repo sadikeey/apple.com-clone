@@ -1,7 +1,11 @@
+import { Outlet } from 'react-router-dom'
+import Navbar from './components/Navbar/'
+
 const App: React.FC = () => {
   return (
-    <div id='app' className='text-3xl'>
-      App
+    <div id='app' className='font-sans'>
+      <Navbar />
+      <Outlet />
     </div>
   )
 }
