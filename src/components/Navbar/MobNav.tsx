@@ -22,7 +22,7 @@ const MobNav: React.FC = () => {
             <input className={`bg-neutral-700 outline-none text-sm w-28 h-min ${isOpenSearch? 'block': 'hidden'}`} type='text' placeholder='Search' />
           </div>
           <BsBag className={`duration-700 ${isOpen && 'text-transparent'}`}/>
-          <div onClick={()=> setOpen(!isOpen)} className='cursor-pointer'>
+          <div onClick={()=> setOpen(!isOpen)} className='cursor-pointer z-50'>
             {isOpen? <AiOutlineClose /> : <HiBars2 />}
           </div>
         </div>
